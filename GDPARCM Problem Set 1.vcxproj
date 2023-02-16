@@ -143,13 +143,11 @@
   <ItemGroup>
     <ClCompile Include="AThread.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="PrimeChecker.cpp" />
     <ClCompile Include="PrimeCheckThread.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AExecutionEvent.h" />
     <ClInclude Include="AThread.h" />
-    <ClInclude Include="PrimeChecker.h" />
     <ClInclude Include="PrimeCheckThread.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
