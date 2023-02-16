@@ -12,13 +12,16 @@ Problem Set 1
 
 int main()
 {
-	auto start = std::chrono::high_resolution_clock::now();
-
-	int numberToCheck = 2147483647;
-	int threadCount = 1;
+	int numberToCheck;
+	int threadCount;
 
 	bool isPrime = true;
 	std::vector<PrimeCheckThread*> threadList{};
+
+	std::cout << "Number to check: "; std::cin >> numberToCheck;
+	std::cout << "Number of threads: "; std::cin >> threadCount;
+
+	auto start = std::chrono::high_resolution_clock::now();
 
 	for (int i = 0; i < threadCount; i++) {
 		PrimeCheckThread* thread = new PrimeCheckThread(numberToCheck, i, threadCount);
